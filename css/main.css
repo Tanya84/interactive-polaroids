@@ -45,7 +45,7 @@ figure {
   position: absolute;
   z-index: 1;
   transform: rotate(-12deg);
-  }
+}
 
 .polaroid:first-child:hover {
   transform: rotate(0deg);
@@ -54,6 +54,25 @@ figure {
 
 .polaroid:nth-child(2) {
   left: 30%;
-  top: 15em;
+  top: 10em;
   transform: rotate(4deg);
+  z-index: 3;
+}
+
+.polaroid:nth-child(2):hover {
+  transform: rotateX(0deg);
+  z-index: 1000;
+}
+
+.polaroid:last-child {
+  z-index: 2;
+  position: absolute;
+  transform: rotate(35deg);
+  left: 40%;
+  top: 6em;
+}
+
+.polaroid:last-child:hover {
+  transform: rotate(0deg);
+  z-index: 1000;
 }
